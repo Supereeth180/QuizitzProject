@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+<style>
+    button {
+        width: 50%;
+        padding: 75px;
+        font-size: 25px;
+        color: white;
+        font-family: Trebuchet MS;
+        transition: 0.2s;
+        border: none;
+    }
+
+    #zoom {
+       text-align: center;
+       font-size: 25px;
+       font-family: Trebuchet MS;
+       animation-name: zoom;
+       animation-duration: 0.5s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+   }
+
+   @keyframes zoom {
+       from {font-size: 25px;}
+       to {font-size: 40px;}
+   }
+
+    #orange {
+        background-color: orange;
+    }
+
+    #green {
+        background-color: green;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+
+    #blue {
+        background-color: blue;
+    }
+
+    #red {
+        background-color: red;
+    }
+
+    div {
+        width: 1900px;
+        height: 940px;
+        animation-name: change;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        background-color: green;
+        color: white;
+    }
+
+    @keyframes change {
+        0% {background-color: green;}
+        20% {background-color: blue;}
+        40% {background-color: orange;}
+        60% {background-color: yellow;}
+        80% {background-color: red;}
+        100% {background-color: green;}
+    }
+</style>
+</head>
+<body>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+<h2 id="zoom">Which country has more pets owned than any other country?</h2>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="incorrect4.html"><button id="green">United States</button></a><a href="incorrect4.html"><button id="red">India</button></a>
+<br>
+<a href="correct4.html"><button id="blue">New Zealand</button></a><a href="correct4.html"><button id="orange">Australia</button></a>
+</div>
+</body>
+</html>
