@@ -11,10 +11,19 @@
         border: none;
     }
 
-   h2 {
+   #zoom {
        text-align: center;
-       font-size: 40px;
+       font-size: 25px;
        font-family: Trebuchet MS;
+       animation-name: zoom;
+       animation-duration: 0.5s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+   }
+
+   @keyframes zoom {
+       from {font-size: 25px;}
+       to {font-size: 40px;}
    }
 
     #orange {
