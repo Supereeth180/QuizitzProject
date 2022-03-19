@@ -36,6 +36,21 @@
     #red {
         background-color: red;
     }
+    
+     #zoom {
+       text-align: center;
+       font-size: 25px;
+       font-family: Trebuchet MS;
+       animation-name: zoom;
+       animation-duration: 0.5s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+   }
+
+   @keyframes zoom {
+       from {font-size: 25px;}
+       to {font-size: 40px;}
+   }
 
     div {
         width: 1900px;
@@ -61,7 +76,7 @@
 <body>
     <div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
-<h2>True or false: Skin is the body's largest organ</h2>
+<h2 id="zoom">True or false: Skin is the body's largest organ</h2>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <a href="incorrect8.html"><button id="green">False</button></a></a><a href="correct8.html"><button id="orange">True</button></a>
 </div>
